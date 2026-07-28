@@ -1,0 +1,84 @@
+{
+  "info": {
+    "name": "Sample API Testing Collection",
+    "description": "A sample collection with public test APIs for learning Postman and Jenkins integration.",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Get Single Post (JSONPlaceholder)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/posts/1",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["posts", "1"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get All Users (JSONPlaceholder)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://jsonplaceholder.typicode.com/users",
+          "protocol": "https",
+          "host": ["jsonplaceholder", "typicode", "com"],
+          "path": ["users"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Single User (Reqres)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://reqres.in/api/users/2",
+          "protocol": "https",
+          "host": ["reqres", "in"],
+          "path": ["api", "users", "2"]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get Weather (Open-Meteo)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://api.open-meteo.com/v1/forecast?latitude=12.97&longitude=77.59&current_weather=true",
+          "protocol": "https",
+          "host": ["api", "open-meteo", "com"],
+          "path": ["v1", "forecast"],
+          "query": [
+            { "key": "latitude", "value": "12.97" },
+            { "key": "longitude", "value": "77.59" },
+            { "key": "current_weather", "value": "true" }
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Echo Request Info (httpbin)",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "https://httpbin.org/get",
+          "protocol": "https",
+          "host": ["httpbin", "org"],
+          "path": ["get"]
+        }
+      },
+      "response": []
+    }
+  ]
+}
